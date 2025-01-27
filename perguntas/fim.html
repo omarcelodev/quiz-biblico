@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim do Jogo</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url(/images/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1{
+            font-family: "Jersey 10", serif;
+            font-weight: 600;
+            color: #ffde59;
+            font-size: 16vw;
+        }
+        
+        .end {
+        font-family: "Jersey 10", serif;
+        font-size: 5vw;
+        color: black;
+        background: lightgray;
+        border: 3px solid black;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 15px;
+        box-shadow: 3px 3px 2px black; 
+        transition: all 0.1s linear;
+        }
+
+        .end:active {
+        box-shadow: 1px 1px 0px black;
+        transform: translate(2px, 2px);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Muito Obrigado!</h1>
+    <button class="end" id="endbtt">Até Logo!</button>
+
+    <script>
+        const endButton = document.getElementById('endbtt');
+
+        function endquiz(){
+           window.location.href = '/inicio.html'
+        }
+
+        endButton.addEventListener('click', endquiz)
+    </script>
+    
+</body>
+</html>
