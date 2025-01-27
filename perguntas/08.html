@@ -5,81 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pergunta 08</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image:url(/images/background.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-         }
- 
-         p{
-             font-size: 2em;
-             font-weight: 600;
-         }
- 
-         a{
-             color: white;
-             font-size: 1.1em;
-             text-decoration: none;
-         }
- 
-         a:hover{
-             text-decoration: underline;
-         }
- 
-         main{
-             max-width: 600px;
-             background-color: bisque;
-             padding: 11px;
-             margin: auto;
-             border-radius: 10px;
-         }
- 
-         .container{
-             display: flex;
-             align-items: flex-start;
-             gap: 20px;
-         }
- 
-         div.resp{
-             width: 150px;
-             background-color: #806747;;
-             margin: 5px;
-             padding: 11px;
-             border-radius: 10px;
-         }
- 
-         .resp:hover{
-             background-color: #4e402d;
-             transition: 0.4s;
-         }
- 
- 
-         div.img{
-             background-image: url(../images/biblia.png);
-             background-position: center;
-             background-repeat: no-repeat;
-             width: 355px;
-             height: 260px;
-             
-         }
- 
-     </style> 
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+      body{
+           font-family: Arial, Helvetica, sans-serif;
+           background-image:url(/images/fundo.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           height: 100vh; 
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           text-align: center;
+           margin: 0;
+       }
+
+       h1{
+           font-family: "Jersey 10", serif;
+           font-weight: 600;
+           color: #ffffff;
+           font-size: 4em;
+       }
+
+       .lks-container{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       width: 80%;
+       }
+
+       .lks-container a{
+       font-family:  "Jersey 10", serif;
+       width: 45%;  
+       text-decoration: none;
+        color: #000000;
+       font-size: 2em;
+       }
+
+       a{
+           background-color: lightgray;
+           border-radius: 10px;
+           border: 1px solid black;
+           box-shadow: 1px 1px 1px black;
+       }
+
+   </style> 
 </head>
 <body>
-    <main>
-        <p>08)Qual é o menor versículo da Bíblia</p>
-        <div class="container">
-            <div class="respostas">
-                <div class="resp"><a href="errou.html">a) "O Senhor é meu pastor"</a></div>
-                <div class="resp"><a href="errou.html">b) "Deus é amor"</a></div>
-                <div class="resp"><a href="09.html">c) "Jesus chorou"</a></div>
-                <div class="resp"><a href="errou.html">d) "A fé é o firme fundamento"</a></div>
-            </div>
-            <div class="img"></div>
-        </div>
-    </main>
+       <h1>Qual é o menor versículo da Bíblia?</h1>
+       <div class="lks-container">
+           <a href="09.html">A)"Jesus chorou"</a>
+           <a href="errou.html">B)"Deus é amor"l</a>
+           <a href="errou.html">C)"O Senhor é meu pastor"</a>
+           <a href="errou.html">D)A fé é o firme fundamento"</a>
+       </div>
+   
 </body>
 </html>

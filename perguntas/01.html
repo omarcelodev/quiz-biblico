@@ -5,86 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pergunta 01</title>
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
        body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image:url(/images/background.png);
+            background-image:url(/images/fundo.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
         }
 
-        p{
-            font-size: 2em;
+        h1{
+            font-family: "Jersey 10", serif;
             font-weight: 600;
+            color: #ffffff;
+            font-size: 4em;
+        }
+
+        .lks-container{
+         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 80%;
+        }
+
+        .lks-container a{
+        font-family:  "Jersey 10", serif;
+        width: 45%;  
+        text-decoration: none;
+         color: #000000;
+        font-size: 2em;
         }
 
         a{
-            color: white;
-            font-size: 1.1em;
-            text-decoration: none;
-        }
-
-        a:hover{
-            text-decoration: underline;
-        }
-
-        main{
-            max-width: 600px;
-            background-color: bisque;
-            padding: 11px;
-            margin: auto;
+            background-color: lightgray;
             border-radius: 10px;
-        }
-
-        .container{
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        div.resp{
-            width: 90px;
-            background-color: #806747;;
-            margin: 5px;
-            padding: 11px;
-            border-radius: 10px;
-        }
-
-        .resp:hover{
-            background-color: #4e402d;
-            transition: 0.4s;
-        }
-
-
-        div.img{
-            background-image: url(../images/rei.png);
-            background-position: right;
-            background-repeat: no-repeat;
-            width: 355px;
-            height: 260px;
-            
+            border: 1px solid black;
+            box-shadow: 1px 1px 1px black;
         }
 
     </style> 
 </head>
 <body>
-    <main>
-        <p>01)Quem foi o primeiro rei de Israel?</p>
-       
-            <div class="container">
-
-                <div class="respostas">
-                    <div class="resp"><a href="errou.html">a) Davi</a></div>
-                    <div class="resp"><a href="02.html">b) Saul</a></div>
-                    <div class="resp"><a href="errou.html">c) Salomão</a></div>
-                    <div class="resp"><a href="errou.html">d) Josué</a></div>
-                </div>
-
-                    <div class="img"></div>
-
-            </div>
-    </main>
+        <h1>Quem foi o primeiro rei de Israel?</h1>
+        <div class="lks-container">
+            <a href="errou.html">A)Davi</a>
+            <a href="02.html">B)Saul</a>
+            <a href="errou.html">C)Salomão</a>
+            <a href="errou.html">D)Josué</a>
+        </div>
     
 </body>
 </html>
